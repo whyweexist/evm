@@ -1,12 +1,13 @@
 package token_test
 
 import (
-	"github.com/aasumitro/tix/pkg/token"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/whyweexist/evm/pkg/token"
 )
 
 func TestJSONWebToken_ClaimJWTToken(t *testing.T) {

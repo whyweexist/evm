@@ -5,13 +5,14 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/whyweexist/evm/common"
-	"github.com/whyweexist/evm/internal/domain"
-	"github.com/aasumitro/tix/internal/domain/response"
+	"time"
+
 	"github.com/getsentry/sentry-go"
 	"github.com/go-co-op/gocron"
 	"github.com/redis/go-redis/v9"
-	"time"
+	"github.com/whyweexist/evm/common"
+	"github.com/whyweexist/evm/internal/domain"
+	"github.com/whyweexist/evm/internal/domain/response"
 )
 
 type syncEventJob struct {
